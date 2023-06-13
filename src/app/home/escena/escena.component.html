@@ -1,12 +1,20 @@
 <!-- Componente hijo -->
 <!-- ??? es coorecto???? -->
-<div
-  class="container-fluid d-flex "
-  style="background-color: rgb(230, 239, 236)"
->
-  <ul
-    class="row  justify-content-center align-items-center list-unstyled "
-  >
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block w-100">ANTERIOR</button>
+    </div>
+
+    <div class="col-lg-6">
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-block w-100">SIGUIENTE</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid d-flex">
+  <ul class="row justify-content-center align-items-center list-unstyled">
     <li
       *ngFor="let story of storyArray"
       class="col-lg-12 m-3 p-1 custom-align-items-center"
