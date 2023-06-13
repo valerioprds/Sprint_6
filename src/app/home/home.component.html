@@ -28,10 +28,11 @@
 <div class="mt-5 d-flex justify-content-center">
   <button
     type="button"
-    class="btn btn-outline-dark"
+    class="btn btn-outline-dark description-button"
     (click)="mostrarEscena = true"
+    [ngClass]="{'description-button': clicado}" (click)="clicado = true"
   >
     Let's Go!
   </button>
 </div>
-<app-escena *ngIf="mostrarEscena" [storyArray]="storyArray"></app-escena>
+<app-escena *ngIf="mostrarEscena" [storyArray]="storyArray" ></app-escena>

@@ -20,8 +20,8 @@ export class HomeComponent {
     },
   ];
 
-  mostrarEscena : boolean = false
+  mostrarEscena: boolean = false;
 
+  clicado: boolean = false;
 
-  
 }
