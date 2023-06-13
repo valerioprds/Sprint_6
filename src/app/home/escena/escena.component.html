@@ -1,2 +1,16 @@
-<p>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"
-</p>
+<!-- Componente hijo -->
+<!-- ??? es coorecto???? -->
+<div
+  class="container-fluid d-flex"
+  style="background-color: rgb(230, 239, 236)"
+>
+  <ul class="row list-unstyled justify-content-center">
+    <li
+      *ngFor="let story of storyArray"
+      style="border: 2px solid red"
+      class="align-items-centre m-3"
+    >
+      {{ story.text }}
+    </li>
+  </ul>
+</div>
