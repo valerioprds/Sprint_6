@@ -1,14 +1,15 @@
 <!-- Componente hijo -->
 <!-- ??? es coorecto???? -->
 <div
-  class="container-fluid d-flex"
+  class="container-fluid d-flex "
   style="background-color: rgb(230, 239, 236)"
 >
-  <ul class="row list-unstyled justify-content-center">
+  <ul
+    class="row  justify-content-center align-items-center list-unstyled "
+  >
     <li
       *ngFor="let story of storyArray"
-      style="border: 2px solid red"
-      class="align-items-centre m-3"
+      class="col-lg-12 m-3 p-1 custom-align-items-center"
     >
       {{ story.text }}
     </li>

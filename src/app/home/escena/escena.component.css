@@ -1,0 +1,8 @@
+.custom-align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px 15px;
+
+  border: 2px solid red;
+}
