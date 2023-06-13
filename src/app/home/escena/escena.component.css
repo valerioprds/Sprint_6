@@ -6,3 +6,20 @@
 
   border: 3px solid #4e4d4d;
 }
+
+.my-btn {
+  font-size: 1.7 rem;
+}
+
+.extraclass {
+  background-color: black;
+  color: white;
+}
+
+.anotherclass {
+  font-weight: bold;
+}
+
+.selected-sentence {
+  background-color: #f49eac;
+}

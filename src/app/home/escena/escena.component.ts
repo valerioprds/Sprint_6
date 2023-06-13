@@ -1,30 +1,29 @@
-import { Component ,Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Story } from '../stories.interface';
-
 
 @Component({
   selector: 'app-escena',
   templateUrl: './escena.component.html',
-  styleUrls: ['./escena.component.css']
+  styleUrls: ['./escena.component.css'],
 })
-
-
 export class EscenaComponent {
-/*   @Input()
-  public storyArray: Story[] = [
-    {
-      text: 'Nuestro héroe estaba flotando por el espacio sideral cuando a lo lejos divisó una nave espacial.',
-    },
-    {
-      text: 'Sentía curiosidad por el interior de la nave y se puso a inspeccionarla. Llegó a una sala con dos puertas.',
-    },
-    { text: 'El héroe decidió atravesar la puerta que le llevaba a casa' },
-    {
-      text: 'Mientras tanto, otras heroes no tuvieron tanta suerte en su elección...',
-    },
-  ]; */
+  @Input() storyArray: Story[] = [];
 
-  @Input () storyArray : Story[] = []
+  /*   someProperty = true;
+  anotherProperty = true; */
 
+  selectedIndex: number = -1
 
+  currentSentence: number = 0;
+  prev(): void {
+    if (this.currentSentence > 0) {
+      this.currentSentence--;
+    }
+  }
+
+  next(): void {
+    if (this.currentSentence < this.storyArray.length - 1) {
+      this.currentSentence++;
+    }
+  }
 }
