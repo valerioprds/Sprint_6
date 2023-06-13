@@ -19,4 +19,9 @@ export class HomeComponent {
       text: 'Mientras tanto, otras heroes no tuvieron tanta suerte en su elección...',
     },
   ];
+
+  mostrarEscena : boolean = false
+
+
+  
 }
