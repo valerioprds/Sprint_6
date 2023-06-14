@@ -2,3 +2,7 @@
   display: none;
 }
 
+.story-container {
+  background-size: cover;
+  background-position: center;
+}

@@ -1,3 +1,6 @@
+
+
+
 .custom-align-items-center {
   display: flex;
   flex-direction: column;
@@ -7,19 +10,15 @@
   border: 3px solid #4e4d4d;
 }
 
-.my-btn {
-  font-size: 1.7 rem;
-}
-
-.extraclass {
-  background-color: black;
-  color: white;
-}
-
-.anotherclass {
-  font-weight: bold;
-}
-
 .selected-sentence {
   background-color: #f49eac;
+}
+
+.background-image {
+  /* background-image: url("{{ storyArray[currentSentence].img }}"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-top: 0;
 }
