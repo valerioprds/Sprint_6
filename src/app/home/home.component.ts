@@ -28,5 +28,5 @@ export class HomeComponent {
 
   mostrarEscena: boolean = false;
 
-  clicado: boolean = false;
+  /* clicado: boolean = false; */
 }

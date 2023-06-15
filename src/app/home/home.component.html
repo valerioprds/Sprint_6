@@ -23,19 +23,19 @@
     laudantium beatae magnam soluta, necessitatibus error rem eveniet ipsum,
     ipsam illum dolorum blanditiis sit praesentium! Officiis nam sit soluta?
   </p>
+  <div class=" d-flex justify-content-center">
+    <button
+      type="button"
+      class="btn btn-outline-dark description-button"
+      (click)="mostrarEscena = true"
+
+    >
+      Let's Go!
+    </button>
+  </div>
 </div>
 
-<div class=" d-flex justify-content-center">
-  <button
-    type="button"
-    class="btn btn-outline-dark description-button"
-    (click)="mostrarEscena = true"
-    [ngClass]="{ 'description-button': clicado }"
-    (click)="clicado = true"
-  >
-    Let's Go!
-  </button>
-</div>
+
 <app-escena
   *ngIf="mostrarEscena"
   [storyArray]="storyArray"
