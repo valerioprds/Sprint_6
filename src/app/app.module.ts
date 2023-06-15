@@ -1,4 +1,4 @@
-import { EscenaComponent } from './home/escena/escena.component';
+import { EscenaComponent } from './escena/escena.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

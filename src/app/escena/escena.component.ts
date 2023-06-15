@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Story } from '../stories.interface';
+import { Story } from '../home/stories.interface';
 
 @Component({
   selector: 'app-escena',
@@ -29,6 +29,6 @@ export class EscenaComponent {
       this.currentSentence++;
     }
 
-  
+
   }
 }
